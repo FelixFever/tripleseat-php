@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "FelixFever\\": "src"
+      "FelixFever\\Tripleseat\\": "src"
     }
   },
   "suggest": {

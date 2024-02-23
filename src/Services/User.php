@@ -1,6 +1,6 @@
-<?php namespace FelixFever\Services;
+<?php namespace FelixFever\Tripleseat\Services;
 
-use FelixFever\Operations;
+use FelixFever\Tripleseat\Operations;
 
 /**
  * A user is a person who can log into your Tripleseat account.

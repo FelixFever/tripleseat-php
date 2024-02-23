@@ -1,4 +1,4 @@
-<?php namespace FelixFever\Http;
+<?php namespace FelixFever\Tripleseat\Http;
 
 use ApiClients\Tools\Psr7\Oauth1\Definition\ConsumerKey;
 use ApiClients\Tools\Psr7\Oauth1\Definition\ConsumerSecret;
@@ -13,8 +13,8 @@ use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamFactoryInterface;
-use FelixFever\Contracts\Http;
-use FelixFever\Exceptions\HttpException;
+use FelixFever\Tripleseat\Contracts\Http;
+use FelixFever\Tripleseat\Exceptions\HttpException;
 
 class Client implements Http
 {

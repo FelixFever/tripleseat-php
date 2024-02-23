@@ -1,8 +1,8 @@
-<?php namespace FelixFever\Services;
+<?php namespace FelixFever\Tripleseat\Services;
 
 use Generator;
-use FelixFever\Exceptions\HttpException;
-use FelixFever\Operations;
+use FelixFever\Tripleseat\Exceptions\HttpException;
+use FelixFever\Tripleseat\Operations;
 
 /**
  * A lead represents a prospective person or interested party. Leads can be

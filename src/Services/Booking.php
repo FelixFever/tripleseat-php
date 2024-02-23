@@ -1,6 +1,6 @@
-<?php namespace FelixFever\Services;
+<?php namespace FelixFever\Tripleseat\Services;
 
-use FelixFever\Operations;
+use FelixFever\Tripleseat\Operations;
 
 /**
  * A booking represents block of time for an event or multiple events. Bookings

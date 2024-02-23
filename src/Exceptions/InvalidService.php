@@ -1,4 +1,4 @@
-<?php namespace FelixFever\Exceptions;
+<?php namespace FelixFever\Tripleseat\Exceptions;
 
 use Exception;
 

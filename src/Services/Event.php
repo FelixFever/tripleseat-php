@@ -1,6 +1,6 @@
-<?php namespace FelixFever\Services;
+<?php namespace FelixFever\Tripleseat\Services;
 
-use FelixFever\Operations;
+use FelixFever\Tripleseat\Operations;
 
 /**
  * An event represents just that, and event at a given time and location.

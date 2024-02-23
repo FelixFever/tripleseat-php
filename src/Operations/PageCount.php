@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FelixFever\Operations;
+namespace FelixFever\Tripleseat\Operations;
 
-use FelixFever\Services\Service;
+use FelixFever\Tripleseat\Services\Service;
 
 /**
  * @mixin Service

@@ -1,4 +1,4 @@
-<?php namespace FelixFever\Contracts;
+<?php namespace FelixFever\Tripleseat\Contracts;
 
 interface Http
 {

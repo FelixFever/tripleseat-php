@@ -1,12 +1,11 @@
-<?php namespace FelixFever;
+<?php namespace FelixFever\Tripleseat;
 
 use Psr\Http\Client\ClientInterface;
-use FelixFever\Exceptions\InvalidArgumentException;
-use FelixFever\Exceptions\InvalidAuthConfiguration;
-use FelixFever\Exceptions\InvalidService;
-use FelixFever\Exceptions\InvalidSite;
-use FelixFever\Http\Client as HttpClient;
-use FelixFever\Services;
+use FelixFever\Tripleseat\Exceptions\InvalidArgumentException;
+use FelixFever\Tripleseat\Exceptions\InvalidAuthConfiguration;
+use FelixFever\Tripleseat\Exceptions\InvalidService;
+use FelixFever\Tripleseat\Exceptions\InvalidSite;
+use FelixFever\Tripleseat\Http\Client as HttpClient;
 
 /**
  * @property Services\Account account
