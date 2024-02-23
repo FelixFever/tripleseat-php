@@ -6,6 +6,11 @@ Requires at least PHP 8
 
 Until v1 there may be backward incompatible changes with every minor version (0.x).
 
+### How is this fork different
+
+- Compatible with PHP 8
+- Adds a method to get total page count to make it possible to build a pager.
+
 ### Getting started
 
 First, create a new instance of the Tripleseat client and provide the API keys for authentication.
