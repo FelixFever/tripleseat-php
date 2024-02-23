@@ -20,6 +20,7 @@ class Lead extends Service
     use Operations\SearchPaged;
     use Operations\Get;
     use Operations\Delete;
+    use Operations\PageCount;
 
     public function create(array $payload)
     {

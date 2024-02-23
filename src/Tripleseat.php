@@ -101,7 +101,7 @@ class Tripleseat implements \ArrayAccess
      * @param int $offset
      * @return bool
      */
-    public function offsetExists($offset)
+    public function offsetExists(mixed $offset): bool
     {
         // Load and cache the sites
         if (is_null($this->sites)) {
@@ -120,7 +120,7 @@ class Tripleseat implements \ArrayAccess
      * @return Tripleseat
      * @throws InvalidSite
      */
-    public function offsetGet($offset)
+    public function offsetGet(mixed $offset): mixed
     {
         if (isset($this[$offset])) {
             if (is_null($this->sites[$offset])) {
@@ -133,12 +133,12 @@ class Tripleseat implements \ArrayAccess
         throw new InvalidSite("Site with ID '{$offset}' not found");
     }
 
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         throw new InvalidArgumentException("Cannot set index");
     }
 
-    public function offsetUnset($offset)
+    public function offsetUnset(mixed $offset): void
     {
         throw new InvalidArgumentException("Cannot unset index");
     }

@@ -103,6 +103,23 @@ class Client implements Http
         }
     }
 
+  /**
+   * Get page count.
+   *
+   * @param string $path
+   *   The path.
+   *
+   * @return int
+   *   The total page count.
+   * 
+   * @throws ClientExceptionInterface
+   * @throws HttpException
+   */
+    public function pageCount(string $path): int {
+      $data = $this->get($path);
+      return (int) $data['total_pages'];
+    }
+
     /**
      * @param string $path
      * @param array $query

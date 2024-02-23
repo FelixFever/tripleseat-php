@@ -22,4 +22,5 @@ class Event extends Service
     use Operations\Create;
     use Operations\Update;
     use Operations\Delete;
+    use Operations\PageCount;
 }
