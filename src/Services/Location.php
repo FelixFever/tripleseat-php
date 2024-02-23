@@ -1,6 +1,6 @@
-<?php namespace Tripleseat\Services;
+<?php namespace FelixFever\Tripleseat\Services;
 
-use Tripleseat\Operations;
+use FelixFever\Tripleseat\Operations;
 
 /**
  * A location represents a venue (restaurant, wedding venue, etc.). Locations

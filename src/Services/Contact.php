@@ -1,6 +1,6 @@
-<?php namespace Tripleseat\Services;
+<?php namespace FelixFever\Tripleseat\Services;
 
-use Tripleseat\Operations;
+use FelixFever\Tripleseat\Operations;
 
 /**
  * A contact represents an individual. Contacts always belong to an Account.

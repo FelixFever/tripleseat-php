@@ -1,12 +1,12 @@
-<?php namespace Tripleseat;
+<?php namespace FelixFever\Tripleseat;
 
 use Psr\Http\Client\ClientInterface;
-use Tripleseat\Exceptions\InvalidArgumentException;
-use Tripleseat\Exceptions\InvalidAuthConfiguration;
-use Tripleseat\Exceptions\InvalidService;
-use Tripleseat\Exceptions\InvalidSite;
-use Tripleseat\Http\Client as HttpClient;
-use Tripleseat\Services;
+use FelixFever\Tripleseat\Exceptions\InvalidArgumentException;
+use FelixFever\Tripleseat\Exceptions\InvalidAuthConfiguration;
+use FelixFever\Tripleseat\Exceptions\InvalidService;
+use FelixFever\Tripleseat\Exceptions\InvalidSite;
+use FelixFever\Tripleseat\Http\Client as HttpClient;
+use FelixFever\Tripleseat\Services;
 
 /**
  * @property Services\Account account
@@ -97,7 +97,15 @@ class Tripleseat implements \ArrayAccess
         throw new InvalidService($name);
     }
 
-    /**
+    public function __set(string $name, $value): void {
+      throw new InvalidArgumentException("Cannot set");
+    }
+
+    public function __isset(string $name) {
+      return array_key_exists($name, $this->availableServices);
+    }
+
+  /**
      * @param int $offset
      * @return bool
      */

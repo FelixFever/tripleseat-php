@@ -1,6 +1,6 @@
-<?php namespace Tripleseat\Operations;
+<?php namespace FelixFever\Tripleseat\Operations;
 
-use Tripleseat\Services\Service;
+use FelixFever\Tripleseat\Services\Service;
 
 /**
  * @mixin Service

@@ -1,4 +1,4 @@
-<?php namespace Tripleseat\Exceptions;
+<?php namespace FelixFever\Tripleseat\Exceptions;
 
 class InvalidAuthConfiguration extends \InvalidArgumentException implements TripleseatException
 {

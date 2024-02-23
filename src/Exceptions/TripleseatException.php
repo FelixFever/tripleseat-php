@@ -1,4 +1,4 @@
-<?php namespace Tripleseat\Exceptions;
+<?php namespace FelixFever\Tripleseat\Exceptions;
 
 interface TripleseatException
 {
