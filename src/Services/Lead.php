@@ -17,10 +17,10 @@ class Lead extends Service
     public const OBJECT_KEY = "lead";
 
     use Operations\AllPaged;
+    use Operations\PageCount;
     use Operations\SearchPaged;
     use Operations\Get;
     use Operations\Delete;
-    use Operations\PageCount;
 
     public function create(array $payload)
     {

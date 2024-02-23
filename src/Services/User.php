@@ -13,6 +13,7 @@ class User extends Service
     public const OBJECT_KEY = "user";
 
     use Operations\AllPaged;
+    use Operations\PageCount;
     use Operations\SearchPaged;
     use Operations\Get;
 }

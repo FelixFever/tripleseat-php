@@ -2,7 +2,7 @@
 
 A simple PHP wrapper around [Tripleseat's API](https://support.tripleseat.com/hc/en-us/sections/200821727-Tripleseat-API).
 
-Requires at least PHP 7.1 
+Requires at least PHP 8
 
 Until v1 there may be backward incompatible changes with every minor version (0.x).
 
@@ -107,6 +107,13 @@ foreach($bookings as $booking) {
 
 // convert from Generator to array
 $bookingsArray = iterator_to_array($bookings);
+```
+
+### `count` operation
+For services that return a Generator for paginated results a method exists to get the total number of pages.
+
+```php
+$pageCount = $tripleseat->lead->pageCount();
 ```
 
 ### Other operations

@@ -13,6 +13,7 @@ class Contact extends Service
     public const OBJECT_KEY = "contact";
 
     use Operations\AllPaged;
+    use Operations\PageCount;
     use Operations\SearchPaged;
     use Operations\Get;
     use Operations\Create;

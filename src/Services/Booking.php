@@ -14,6 +14,7 @@ class Booking extends Service
     public const OBJECT_KEY = "booking";
 
     use Operations\AllPaged;
+    use Operations\PageCount;
     use Operations\SearchPaged;
     use Operations\Get;
     use Operations\Create;

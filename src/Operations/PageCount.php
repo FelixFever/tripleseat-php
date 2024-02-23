@@ -19,7 +19,7 @@ trait PageCount {
    *
    * @throws \Tripleseat\Exceptions\HttpException
    */
-  public function count(): int {
+  public function pageCount(): int {
     return $this->client->pageCount($this->path());
   }
   
