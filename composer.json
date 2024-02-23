@@ -1,10 +1,10 @@
 {
-  "name": "bonroyage/tripleseat",
-  "description": "Tripleseat API interface",
+  "name": "felixfever/tripleseat",
+  "description": "Tripleseat API interface for PHP 8",
   "license": "MIT",
   "type": "library",
   "require": {
-    "php": ">=7.4",
+    "php": ">=8",
     "ext-json": "*",
     "php-http/client-implementation": "^1.0",
     "psr/http-factory": "^1.0",
