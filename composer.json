@@ -3,6 +3,7 @@
   "description": "Tripleseat API interface for PHP 8",
   "license": "MIT",
   "type": "library",
+  "minimum-stability": "dev",
   "require": {
     "php": ">=8",
     "ext-json": "*",
