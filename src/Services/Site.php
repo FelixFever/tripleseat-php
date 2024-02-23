@@ -1,6 +1,6 @@
-<?php namespace FelixFever\Tripleseat\Services;
+<?php namespace FelixFever\Services;
 
-use FelixFever\Tripleseat\Operations;
+use FelixFever\Operations;
 
 /**
  * A site represents a group of venues. Sites can have multiple locations.

@@ -1,6 +1,6 @@
-<?php namespace FelixFever\Tripleseat\Services;
+<?php namespace FelixFever\Services;
 
-use FelixFever\Tripleseat\Http\Client;
+use FelixFever\Http\Client;
 
 abstract class Service
 {

@@ -1,4 +1,4 @@
-<?php namespace FelixFever\Tripleseat\Exceptions;
+<?php namespace FelixFever\Exceptions;
 
 class InvalidArgumentException extends \InvalidArgumentException implements TripleseatException
 {

@@ -1,7 +1,7 @@
-<?php namespace FelixFever\Tripleseat\Operations;
+<?php namespace FelixFever\Operations;
 
 use Generator;
-use FelixFever\Tripleseat\Services\Service;
+use FelixFever\Services\Service;
 
 /**
  * @mixin Service
