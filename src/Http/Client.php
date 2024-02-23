@@ -81,7 +81,10 @@ class Client implements Http
         ]);
     }
 
-    public function getPaged(string $path, array $query = [], int $fromPage = 1, int $untilPage = PHP_INT_MAX): Generator
+  /**
+   * @throws HttpException
+   */
+  public function getPaged(string $path, array $query = [], int $fromPage = 1, int $untilPage = PHP_INT_MAX): Generator
     {
         // Initial page number cannot be less than 1
         $fromPage = max(1, $fromPage);

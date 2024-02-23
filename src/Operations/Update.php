@@ -1,5 +1,6 @@
 <?php namespace FelixFever\Tripleseat\Operations;
 
+use FelixFever\Tripleseat\Exceptions\HttpException;
 use FelixFever\Tripleseat\Services\Service;
 
 /**
@@ -8,6 +9,9 @@ use FelixFever\Tripleseat\Services\Service;
 trait Update
 {
 
+    /**
+     * @throws HttpException
+     */
     public function update(int $id, array $data)
     {
         $data = $this->objectToPayload($data);

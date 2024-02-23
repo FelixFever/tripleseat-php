@@ -1,5 +1,6 @@
 <?php namespace FelixFever\Tripleseat\Operations;
 
+use FelixFever\Tripleseat\Exceptions\HttpException;
 use FelixFever\Tripleseat\Services\Service;
 
 /**
@@ -8,6 +9,9 @@ use FelixFever\Tripleseat\Services\Service;
 trait Get
 {
 
+    /**
+     * @throws HttpException
+     */
     public function get(int $id)
     {
         $response = $this->client->get(

@@ -2,6 +2,7 @@
 
 use Generator;
 use FelixFever\Tripleseat\Services\Service;
+use FelixFever\Tripleseat\Exceptions\HttpException;
 
 /**
  * @mixin Service
@@ -9,7 +10,10 @@ use FelixFever\Tripleseat\Services\Service;
 trait All
 {
 
-    public function all(): Generator
+  /**
+   * @throws HttpException
+   */
+  public function all(): Generator
     {
         $data = $this->client->get($this->path());
 

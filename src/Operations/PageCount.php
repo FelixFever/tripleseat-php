@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace FelixFever\Tripleseat\Operations;
 
+use FelixFever\Tripleseat\Exceptions\HttpException;
 use FelixFever\Tripleseat\Services\Service;
 
 /**
@@ -17,7 +18,7 @@ trait PageCount {
    * @return int
    *   The page count.
    *
-   * @throws \Tripleseat\Exceptions\HttpException
+   * @throws HttpException
    */
   public function pageCount(): int {
     return $this->client->pageCount($this->path());

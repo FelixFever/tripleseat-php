@@ -14,8 +14,7 @@ abstract class Service
         $this->client = $client;
     }
 
-    protected function path(string $path = null)
-    {
+    protected function path(string $path = null): string {
         return static::PATH . ($path ? "/" . $path : "") . ".json";
     }
 

@@ -22,6 +22,9 @@ class Lead extends Service
     use Operations\Get;
     use Operations\Delete;
 
+   /**
+    * @throws HttpException
+    */
     public function create(array $payload)
     {
         $payload = $this->objectToPayload($payload);
@@ -39,6 +42,9 @@ class Lead extends Service
         return $response;
     }
 
+    /**
+     * @throws HttpException
+     */
     public function forms(): Generator
     {
         $data = $this->client->get(
